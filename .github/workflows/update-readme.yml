@@ -12,17 +12,23 @@ jobs:
       contents: write
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.11'
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v1
+        with:
+          # Pin the version of uv to use
+          # uv-version: "0.1.18"
+          # The version of Python to use
+          python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+        run: uv pip install .
 
       - name: Run update script
         env:
@@ -31,7 +37,7 @@ jobs:
           python scripts/update_readme.py
 
       - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "docs(profile): auto-update readme with repo stats"
           file_pattern: "profile/README.md"
