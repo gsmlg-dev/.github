@@ -15,12 +15,5 @@ Every thing starts here.
 
 Building Docker images.
 
-### Rust
-
-### Go
-
-### Eliir
-
-### Javascript
-
-### Dart
+<!--START_SECTION:repositories-->
+<!--END_SECTION:repositories-->
