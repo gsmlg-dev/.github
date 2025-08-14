@@ -29,10 +29,13 @@ jobs:
 
       - name: Install dependencies
         run: uv pip install .
+        env:
+          UV_SYSTEM_PYTHON: "1"
 
       - name: Run update script
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           python scripts/update_readme.py
 

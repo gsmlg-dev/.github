@@ -12,7 +12,7 @@ def fetch_repos(org_name):
     }
 
     # Use a token if available for higher rate limits
-    token = os.environ.get("GH_TOKEN")
+    token = os.environ.get("PERSONAL_ACCESS_TOKEN") or os.environ.get("GH_TOKEN")
     if token:
         headers["Authorization"] = f"token {token}"
 
@@ -21,7 +21,7 @@ def fetch_repos(org_name):
         response.raise_for_status()  # Will raise an exception for 4xx/5xx errors
 
         for repo in response.json():
-            if not repo["private"]:
+            if not repo["private"] and repo["name"] != ".github":
                 repos.append({
                     "name": repo["name"],
                     "language": repo["language"],
