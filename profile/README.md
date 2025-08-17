@@ -18,12 +18,10 @@ Building Docker images.
 <!--START_SECTION:repositories-->
 | Repository | Language | Stars | Forks |
 |---|---|---|---|
-| [phoenix-duskmoon-ui](https://github.com/gsmlg-dev/phoenix-duskmoon-ui) | Elixir | ⭐️ 67 | 🍴 0 |
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
 | [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 48 | 🍴 4 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 41 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 6 | 🍴 0 |
-| [yew-duskmoon-ui](https://github.com/gsmlg-dev/yew-duskmoon-ui) | Rust | ⭐️ 5 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 1 | 🍴 0 |
@@ -57,5 +55,6 @@ Building Docker images.
 | [SwitchyOmega](https://github.com/gsmlg-dev/SwitchyOmega) | N/A | ⭐️ 0 | 🍴 0 |
 | [route53](https://github.com/gsmlg-dev/route53) | Go | ⭐️ 0 | 🍴 0 |
 | [hex_hub](https://github.com/gsmlg-dev/hex_hub) | Elixir | ⭐️ 0 | 🍴 0 |
+| [phoenix_socket_client](https://github.com/gsmlg-dev/phoenix_socket_client) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
