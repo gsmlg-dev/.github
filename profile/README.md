@@ -19,8 +19,8 @@ Building Docker images.
 | Repository | Language | Stars | Forks |
 |---|---|---|---|
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
-| [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 48 | 🍴 4 |
-| [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 41 | 🍴 4 |
+| [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 49 | 🍴 4 |
+| [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 6 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
@@ -56,5 +56,8 @@ Building Docker images.
 | [route53](https://github.com/gsmlg-dev/route53) | Go | ⭐️ 0 | 🍴 0 |
 | [hex_hub](https://github.com/gsmlg-dev/hex_hub) | Elixir | ⭐️ 0 | 🍴 0 |
 | [phoenix_socket_client](https://github.com/gsmlg-dev/phoenix_socket_client) | Elixir | ⭐️ 0 | 🍴 0 |
+| [browser-extension-gemini](https://github.com/gsmlg-dev/browser-extension-gemini) | JavaScript | ⭐️ 0 | 🍴 0 |
+| [browser-extension-react-typescript-starter](https://github.com/gsmlg-dev/browser-extension-react-typescript-starter) | TypeScript | ⭐️ 0 | 🍴 0 |
+| [rust-chat](https://github.com/gsmlg-dev/rust-chat) | Rust | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
