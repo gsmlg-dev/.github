@@ -44,7 +44,6 @@ Building Docker images.
 | [web-llm](https://github.com/gsmlg-dev/web-llm) | Python | ⭐️ 0 | 🍴 0 |
 | [mlc-llm](https://github.com/gsmlg-dev/mlc-llm) | N/A | ⭐️ 0 | 🍴 0 |
 | [mason-bricks](https://github.com/gsmlg-dev/mason-bricks) | Dart | ⭐️ 0 | 🍴 0 |
-| [semaphore](https://github.com/gsmlg-dev/semaphore) | Go | ⭐️ 0 | 🍴 0 |
 | [send-tweet-v2-action](https://github.com/gsmlg-dev/send-tweet-v2-action) | Dart | ⭐️ 0 | 🍴 0 |
 | [ex_html_minifier](https://github.com/gsmlg-dev/ex_html_minifier) | Elixir | ⭐️ 0 | 🍴 0 |
 | [ex_solution](https://github.com/gsmlg-dev/ex_solution) | N/A | ⭐️ 0 | 🍴 0 |
