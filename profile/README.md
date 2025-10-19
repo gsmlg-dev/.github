@@ -21,13 +21,14 @@ Building Docker images.
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
 | [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 49 | 🍴 4 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
-| [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 6 | 🍴 0 |
+| [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 7 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 1 | 🍴 0 |
 | [echarts-el](https://github.com/gsmlg-dev/echarts-el) | TypeScript | ⭐️ 1 | 🍴 0 |
 | [user_agent_generator](https://github.com/gsmlg-dev/user_agent_generator) | Elixir | ⭐️ 1 | 🍴 0 |
 | [phoenix_session_process](https://github.com/gsmlg-dev/phoenix_session_process) | Elixir | ⭐️ 1 | 🍴 0 |
+| [ex_dns](https://github.com/gsmlg-dev/ex_dns) | Elixir | ⭐️ 1 | 🍴 0 |
 | [http_fetch](https://github.com/gsmlg-dev/http_fetch) | Elixir | ⭐️ 1 | 🍴 0 |
 | [kubernetes-from-scratch](https://github.com/gsmlg-dev/kubernetes-from-scratch) | N/A | ⭐️ 0 | 🍴 0 |
 | [docker-xiaomi-aqara-rtsp](https://github.com/gsmlg-dev/docker-xiaomi-aqara-rtsp) | C | ⭐️ 0 | 🍴 0 |
@@ -48,7 +49,6 @@ Building Docker images.
 | [ex_html_minifier](https://github.com/gsmlg-dev/ex_html_minifier) | Elixir | ⭐️ 0 | 🍴 0 |
 | [ex_solution](https://github.com/gsmlg-dev/ex_solution) | N/A | ⭐️ 0 | 🍴 0 |
 | [abyss](https://github.com/gsmlg-dev/abyss) | Elixir | ⭐️ 0 | 🍴 0 |
-| [ex_dns](https://github.com/gsmlg-dev/ex_dns) | Elixir | ⭐️ 0 | 🍴 0 |
 | [gsmlg_epmd](https://github.com/gsmlg-dev/gsmlg_epmd) | N/A | ⭐️ 0 | 🍴 0 |
 | [ex_dhcp](https://github.com/gsmlg-dev/ex_dhcp) | Elixir | ⭐️ 0 | 🍴 0 |
 | [SwitchyOmega](https://github.com/gsmlg-dev/SwitchyOmega) | N/A | ⭐️ 0 | 🍴 0 |
@@ -58,5 +58,7 @@ Building Docker images.
 | [browser-extension-gemini](https://github.com/gsmlg-dev/browser-extension-gemini) | JavaScript | ⭐️ 0 | 🍴 0 |
 | [browser-extension-react-typescript-starter](https://github.com/gsmlg-dev/browser-extension-react-typescript-starter) | TypeScript | ⭐️ 0 | 🍴 0 |
 | [rust-chat](https://github.com/gsmlg-dev/rust-chat) | Rust | ⭐️ 0 | 🍴 0 |
+| [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 0 | 🍴 0 |
+| [secret-hub](https://github.com/gsmlg-dev/secret-hub) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
