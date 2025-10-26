@@ -27,7 +27,7 @@ Building Docker images.
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 1 | 🍴 0 |
 | [echarts-el](https://github.com/gsmlg-dev/echarts-el) | TypeScript | ⭐️ 1 | 🍴 0 |
 | [user_agent_generator](https://github.com/gsmlg-dev/user_agent_generator) | Elixir | ⭐️ 1 | 🍴 0 |
-| [phoenix_session_process](https://github.com/gsmlg-dev/phoenix_session_process) | Elixir | ⭐️ 1 | 🍴 0 |
+| [phoenix_session_process](https://github.com/gsmlg-dev/phoenix_session_process) | Elixir | ⭐️ 1 | 🍴 1 |
 | [ex_dns](https://github.com/gsmlg-dev/ex_dns) | Elixir | ⭐️ 1 | 🍴 0 |
 | [http_fetch](https://github.com/gsmlg-dev/http_fetch) | Elixir | ⭐️ 1 | 🍴 0 |
 | [kubernetes-from-scratch](https://github.com/gsmlg-dev/kubernetes-from-scratch) | N/A | ⭐️ 0 | 🍴 0 |
@@ -60,5 +60,6 @@ Building Docker images.
 | [rust-chat](https://github.com/gsmlg-dev/rust-chat) | Rust | ⭐️ 0 | 🍴 0 |
 | [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 0 | 🍴 0 |
 | [secret-hub](https://github.com/gsmlg-dev/secret-hub) | Elixir | ⭐️ 0 | 🍴 0 |
+| [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
