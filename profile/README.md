@@ -49,7 +49,7 @@ Building Docker images.
 | [ex_html_minifier](https://github.com/gsmlg-dev/ex_html_minifier) | Elixir | ⭐️ 0 | 🍴 0 |
 | [ex_solution](https://github.com/gsmlg-dev/ex_solution) | N/A | ⭐️ 0 | 🍴 0 |
 | [abyss](https://github.com/gsmlg-dev/abyss) | Elixir | ⭐️ 0 | 🍴 0 |
-| [gsmlg_epmd](https://github.com/gsmlg-dev/gsmlg_epmd) | N/A | ⭐️ 0 | 🍴 0 |
+| [gsmlg_epmd](https://github.com/gsmlg-dev/gsmlg_epmd) | Erlang | ⭐️ 0 | 🍴 0 |
 | [ex_dhcp](https://github.com/gsmlg-dev/ex_dhcp) | Elixir | ⭐️ 0 | 🍴 0 |
 | [SwitchyOmega](https://github.com/gsmlg-dev/SwitchyOmega) | N/A | ⭐️ 0 | 🍴 0 |
 | [route53](https://github.com/gsmlg-dev/route53) | Go | ⭐️ 0 | 🍴 0 |
@@ -61,5 +61,6 @@ Building Docker images.
 | [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 0 | 🍴 0 |
 | [secret-hub](https://github.com/gsmlg-dev/secret-hub) | Elixir | ⭐️ 0 | 🍴 0 |
 | [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
+| [open-code-agents](https://github.com/gsmlg-dev/open-code-agents) | Shell | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
