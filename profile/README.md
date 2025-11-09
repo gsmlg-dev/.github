@@ -19,7 +19,7 @@ Building Docker images.
 | Repository | Language | Stars | Forks |
 |---|---|---|---|
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
-| [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 49 | 🍴 4 |
+| [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 51 | 🍴 4 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 7 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
@@ -53,13 +53,12 @@ Building Docker images.
 | [ex_dhcp](https://github.com/gsmlg-dev/ex_dhcp) | Elixir | ⭐️ 0 | 🍴 0 |
 | [SwitchyOmega](https://github.com/gsmlg-dev/SwitchyOmega) | N/A | ⭐️ 0 | 🍴 0 |
 | [route53](https://github.com/gsmlg-dev/route53) | Go | ⭐️ 0 | 🍴 0 |
-| [hex_hub](https://github.com/gsmlg-dev/hex_hub) | Elixir | ⭐️ 0 | 🍴 0 |
+| [hex_hub](https://github.com/gsmlg-dev/hex_hub) | Elixir | ⭐️ 0 | 🍴 1 |
 | [phoenix_socket_client](https://github.com/gsmlg-dev/phoenix_socket_client) | Elixir | ⭐️ 0 | 🍴 0 |
 | [browser-extension-gemini](https://github.com/gsmlg-dev/browser-extension-gemini) | JavaScript | ⭐️ 0 | 🍴 0 |
 | [browser-extension-react-typescript-starter](https://github.com/gsmlg-dev/browser-extension-react-typescript-starter) | TypeScript | ⭐️ 0 | 🍴 0 |
 | [rust-chat](https://github.com/gsmlg-dev/rust-chat) | Rust | ⭐️ 0 | 🍴 0 |
 | [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 0 | 🍴 0 |
-| [secret-hub](https://github.com/gsmlg-dev/secret-hub) | Elixir | ⭐️ 0 | 🍴 0 |
 | [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
 | [open-code-agents](https://github.com/gsmlg-dev/open-code-agents) | Shell | ⭐️ 0 | 🍴 0 |
 
