@@ -21,7 +21,7 @@ Building Docker images.
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
 | [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 51 | 🍴 4 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
-| [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 7 | 🍴 0 |
+| [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 8 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 1 | 🍴 0 |
