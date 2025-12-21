@@ -23,6 +23,7 @@ Building Docker images.
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 8 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
+| [http_fetch](https://github.com/gsmlg-dev/http_fetch) | Elixir | ⭐️ 2 | 🍴 0 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 1 | 🍴 0 |
 | [echarts-el](https://github.com/gsmlg-dev/echarts-el) | TypeScript | ⭐️ 1 | 🍴 0 |
@@ -30,7 +31,6 @@ Building Docker images.
 | [phoenix_session_process](https://github.com/gsmlg-dev/phoenix_session_process) | Elixir | ⭐️ 1 | 🍴 1 |
 | [abyss](https://github.com/gsmlg-dev/abyss) | Elixir | ⭐️ 1 | 🍴 1 |
 | [ex_dns](https://github.com/gsmlg-dev/ex_dns) | Elixir | ⭐️ 1 | 🍴 0 |
-| [http_fetch](https://github.com/gsmlg-dev/http_fetch) | Elixir | ⭐️ 1 | 🍴 0 |
 | [kubernetes-from-scratch](https://github.com/gsmlg-dev/kubernetes-from-scratch) | N/A | ⭐️ 0 | 🍴 0 |
 | [docker-xiaomi-aqara-rtsp](https://github.com/gsmlg-dev/docker-xiaomi-aqara-rtsp) | C | ⭐️ 0 | 🍴 0 |
 | [kauri.io-archive](https://github.com/gsmlg-dev/kauri.io-archive) | CSS | ⭐️ 0 | 🍴 0 |
