@@ -38,7 +38,6 @@ Building Docker images.
 | [react](https://github.com/gsmlg-dev/react) | HTML | ⭐️ 0 | 🍴 0 |
 | [lit](https://github.com/gsmlg-dev/lit) | HTML | ⭐️ 0 | 🍴 0 |
 | [visx](https://github.com/gsmlg-dev/visx) | HTML | ⭐️ 0 | 🍴 0 |
-| [ui5-webcomponents](https://github.com/gsmlg-dev/ui5-webcomponents) | TypeScript | ⭐️ 0 | 🍴 0 |
 | [three-fiber](https://github.com/gsmlg-dev/three-fiber) | HTML | ⭐️ 0 | 🍴 0 |
 | [caddy-geoip-location](https://github.com/gsmlg-dev/caddy-geoip-location) | Go | ⭐️ 0 | 🍴 0 |
 | [helm-charts](https://github.com/gsmlg-dev/helm-charts) | Smarty | ⭐️ 0 | 🍴 0 |
