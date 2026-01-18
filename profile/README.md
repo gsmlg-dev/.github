@@ -18,8 +18,8 @@ Building Docker images.
 <!--START_SECTION:repositories-->
 | Repository | Language | Stars | Forks |
 |---|---|---|---|
+| [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 53 | 🍴 1 |
 | [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 52 | 🍴 4 |
-| [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 8 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
