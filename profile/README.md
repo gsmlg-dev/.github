@@ -23,8 +23,8 @@ Building Docker images.
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 8 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
+| [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 2 | 🍴 0 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
-| [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 1 | 🍴 0 |
 | [echarts-el](https://github.com/gsmlg-dev/echarts-el) | TypeScript | ⭐️ 1 | 🍴 0 |
 | [user_agent_generator](https://github.com/gsmlg-dev/user_agent_generator) | Elixir | ⭐️ 1 | 🍴 0 |
 | [phoenix_session_process](https://github.com/gsmlg-dev/phoenix_session_process) | Elixir | ⭐️ 1 | 🍴 1 |
@@ -60,5 +60,6 @@ Building Docker images.
 | [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 0 | 🍴 1 |
 | [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
 | [open-code-agents](https://github.com/gsmlg-dev/open-code-agents) | Shell | ⭐️ 0 | 🍴 0 |
+| [loki-mode](https://github.com/gsmlg-dev/loki-mode) | N/A | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
