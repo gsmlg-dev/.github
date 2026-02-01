@@ -52,7 +52,6 @@ Building Docker images.
 | [ex_dhcp](https://github.com/gsmlg-dev/ex_dhcp) | Elixir | ⭐️ 0 | 🍴 0 |
 | [SwitchyOmega](https://github.com/gsmlg-dev/SwitchyOmega) | N/A | ⭐️ 0 | 🍴 0 |
 | [route53](https://github.com/gsmlg-dev/route53) | Go | ⭐️ 0 | 🍴 0 |
-| [hex_hub](https://github.com/gsmlg-dev/hex_hub) | Elixir | ⭐️ 0 | 🍴 1 |
 | [phoenix_socket_client](https://github.com/gsmlg-dev/phoenix_socket_client) | Elixir | ⭐️ 0 | 🍴 0 |
 | [browser-extension-gemini](https://github.com/gsmlg-dev/browser-extension-gemini) | JavaScript | ⭐️ 0 | 🍴 0 |
 | [browser-extension-react-typescript-starter](https://github.com/gsmlg-dev/browser-extension-react-typescript-starter) | TypeScript | ⭐️ 0 | 🍴 0 |
