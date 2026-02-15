@@ -22,7 +22,7 @@ Building Docker images.
 | [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 52 | 🍴 4 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 8 | 🍴 0 |
-| [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 3 | 🍴 1 |
+| [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 4 | 🍴 1 |
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 2 | 🍴 0 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
 | [echarts-el](https://github.com/gsmlg-dev/echarts-el) | TypeScript | ⭐️ 1 | 🍴 0 |
