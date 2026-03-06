@@ -21,7 +21,7 @@ Building Docker images.
 | [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 54 | 🍴 4 |
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 53 | 🍴 1 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
-| [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 8 | 🍴 0 |
+| [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 9 | 🍴 0 |
 | [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 4 | 🍴 1 |
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 2 | 🍴 0 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
@@ -60,5 +60,6 @@ Building Docker images.
 | [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
 | [open-code-agents](https://github.com/gsmlg-dev/open-code-agents) | Shell | ⭐️ 0 | 🍴 0 |
 | [loki-mode](https://github.com/gsmlg-dev/loki-mode) | N/A | ⭐️ 0 | 🍴 0 |
+| [denox](https://github.com/gsmlg-dev/denox) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
