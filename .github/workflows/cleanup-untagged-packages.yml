@@ -1,0 +1,99 @@
+name: Cleanup Untagged Packages
+
+on:
+  schedule:
+    - cron: "0 1 * * *" # Runs daily at 01:00 UTC
+  workflow_dispatch:
+
+jobs:
+  cleanup-ghcr-untagged:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - name: Delete untagged GHCR package versions
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
+          script: |
+            const org = context.repo.owner;
+            const packageType = "container";
+            const perPage = 100;
+
+            async function paginate(request) {
+              const results = [];
+              let page = 1;
+
+              while (true) {
+                const response = await request(page);
+                results.push(...response.data);
+
+                if (response.data.length < perPage) {
+                  break;
+                }
+
+                page += 1;
+              }
+
+              return results;
+            }
+
+            const packages = await paginate((page) =>
+              github.request("GET /orgs/{org}/packages", {
+                org,
+                package_type: packageType,
+                per_page: perPage,
+                page,
+              })
+            );
+
+            if (packages.length === 0) {
+              core.info(`No ${packageType} packages found in ${org}.`);
+              return;
+            }
+
+            core.info(`Found ${packages.length} ${packageType} packages in ${org}.`);
+
+            let deletedVersions = 0;
+
+            for (const pkg of packages) {
+              const versions = await paginate((page) =>
+                github.request("GET /orgs/{org}/packages/{package_type}/{package_name}/versions", {
+                  org,
+                  package_type: packageType,
+                  package_name: pkg.name,
+                  per_page: perPage,
+                  page,
+                })
+              );
+
+              const untaggedVersions = versions.filter((version) => {
+                const tags = version.metadata?.container?.tags || [];
+                return tags.length === 0;
+              });
+
+              if (untaggedVersions.length === 0) {
+                core.info(`Package ${pkg.name}: no untagged versions.`);
+                continue;
+              }
+
+              core.info(`Package ${pkg.name}: deleting ${untaggedVersions.length} untagged version(s).`);
+
+              for (const version of untaggedVersions) {
+                await github.request(
+                  "DELETE /orgs/{org}/packages/{package_type}/{package_name}/versions/{package_version_id}",
+                  {
+                    org,
+                    package_type: packageType,
+                    package_name: pkg.name,
+                    package_version_id: version.id,
+                  }
+                );
+
+                deletedVersions += 1;
+                core.info(`Deleted ${pkg.name}@${version.id}`);
+              }
+            }
+
+            core.info(`Cleanup finished. Deleted ${deletedVersions} untagged version(s).`);
