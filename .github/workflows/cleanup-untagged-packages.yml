@@ -2,7 +2,7 @@ name: Cleanup Untagged Packages
 
 on:
   schedule:
-    - cron: "0 1 * * *" # Runs daily at 01:00 UTC
+    - cron: "0 0 * * 6" # Runs every Saturday at 00:00 UTC
   workflow_dispatch:
 
 jobs:
