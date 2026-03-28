@@ -59,6 +59,21 @@ jobs:
 
             let deletedVersions = 0;
 
+            // ghcr.io requires a Bearer token obtained via the /token endpoint; Basic auth alone
+            // does not work for private packages, causing child manifests to go unprotected.
+            const ghToken = process.env.GITHUB_TOKEN || '';
+            const basicAuth = Buffer.from(`USERNAME:${ghToken}`).toString('base64');
+
+            async function getRegistryToken(scope) {
+              const res = await fetch(
+                `https://ghcr.io/token?service=ghcr.io&scope=${encodeURIComponent(scope)}`,
+                { headers: { Authorization: `Basic ${basicAuth}` } }
+              );
+              if (!res.ok) return null;
+              const body = await res.json();
+              return body.token || null;
+            }
+
             for (const pkg of packages) {
               const versions = await paginate((page) =>
                 github.request("GET /orgs/{org}/packages/{package_type}/{package_name}/versions", {
@@ -81,44 +96,58 @@ jobs:
               }
 
               // Fetch manifest lists from GHCR registry to find child digests of multi-arch tagged versions
-              const token = process.env.GITHUB_TOKEN || '';
-              const basicAuth = Buffer.from(`USERNAME:${token}`).toString('base64');
-              for (const v of versions) {
-                const tags = v.metadata?.container?.tags || [];
-                if (tags.length === 0) continue;
-                for (const tag of tags) {
-                  try {
-                    const res = await fetch(
-                      `https://ghcr.io/v2/${org}/${pkg.name}/manifests/${tag}`,
-                      {
-                        headers: {
-                          Authorization: `Basic ${basicAuth}`,
-                          Accept: [
-                            'application/vnd.oci.image.index.v1+json',
-                            'application/vnd.docker.distribution.manifest.list.v2+json',
-                            'application/vnd.docker.distribution.manifest.v2+json',
-                          ].join(', '),
-                        },
-                      }
-                    );
-                    if (res.ok) {
-                      const manifest = await res.json();
-                      // Manifest list / OCI index references child manifests by digest
-                      if (manifest.manifests && Array.isArray(manifest.manifests)) {
-                        for (const m of manifest.manifests) {
-                          if (m.digest) {
-                            protectedDigests.add(m.digest);
+              const registryToken = await getRegistryToken(`repository:${org}/${pkg.name}:pull`);
+              if (!registryToken) {
+                core.warning(`Package ${pkg.name}: unable to obtain ghcr.io token – skipping manifest inspection, all untagged versions will be kept.`);
+              }
+
+              if (registryToken) {
+                for (const v of versions) {
+                  const tags = v.metadata?.container?.tags || [];
+                  if (tags.length === 0) continue;
+                  for (const tag of tags) {
+                    try {
+                      const res = await fetch(
+                        `https://ghcr.io/v2/${org}/${pkg.name}/manifests/${tag}`,
+                        {
+                          headers: {
+                            Authorization: `Bearer ${registryToken}`,
+                            Accept: [
+                              'application/vnd.oci.image.index.v1+json',
+                              'application/vnd.docker.distribution.manifest.list.v2+json',
+                              'application/vnd.docker.distribution.manifest.v2+json',
+                              'application/vnd.oci.image.manifest.v1+json',
+                            ].join(', '),
+                          },
+                        }
+                      );
+                      if (res.ok) {
+                        const manifest = await res.json();
+                        // Manifest list / OCI index references child manifests by digest
+                        if (manifest.manifests && Array.isArray(manifest.manifests)) {
+                          for (const m of manifest.manifests) {
+                            if (m.digest) {
+                              protectedDigests.add(m.digest);
+                            }
                           }
                         }
+                      } else {
+                        core.warning(`Package ${pkg.name}:${tag}: registry returned ${res.status} – child manifests NOT protected.`);
                       }
+                    } catch (e) {
+                      core.warning(`Failed to fetch manifest for ${pkg.name}:${tag}: ${e.message}`);
                     }
-                  } catch (e) {
-                    core.warning(`Failed to fetch manifest for ${pkg.name}:${tag}: ${e.message}`);
                   }
                 }
               }
 
               core.info(`Package ${pkg.name}: ${protectedDigests.size} protected digest(s).`);
+
+              // If we could not inspect manifests, skip deletion entirely to avoid breaking images
+              if (!registryToken) {
+                core.info(`Package ${pkg.name}: skipping deletion (no registry token).`);
+                continue;
+              }
 
               const untaggedVersions = versions.filter((version) => {
                 const tags = version.metadata?.container?.tags || [];
