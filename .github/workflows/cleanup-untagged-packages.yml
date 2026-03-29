@@ -12,6 +12,9 @@ jobs:
       packages: write
       contents: read
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Delete untagged GHCR package versions
         uses: actions/github-script@v7
         env:
@@ -19,35 +22,21 @@ jobs:
         with:
           github-token: ${{ secrets.GHCR_TOKEN || secrets.GITHUB_TOKEN }}
           script: |
+            const { classifyVersions, paginate } = require('./scripts/cleanup-untagged-packages.js');
+
             const org = context.repo.owner;
             const packageType = "container";
             const perPage = 100;
 
-            async function paginate(request) {
-              const results = [];
-              let page = 1;
-
-              while (true) {
-                const response = await request(page);
-                results.push(...response.data);
-
-                if (response.data.length < perPage) {
-                  break;
-                }
-
-                page += 1;
-              }
-
-              return results;
-            }
-
-            const packages = await paginate((page) =>
-              github.request("GET /orgs/{org}/packages", {
-                org,
-                package_type: packageType,
-                per_page: perPage,
-                page,
-              })
+            const packages = await paginate(
+              (page) =>
+                github.request("GET /orgs/{org}/packages", {
+                  org,
+                  package_type: packageType,
+                  per_page: perPage,
+                  page,
+                }),
+              perPage,
             );
 
             if (packages.length === 0) {
@@ -57,117 +46,64 @@ jobs:
 
             core.info(`Found ${packages.length} ${packageType} packages in ${org}.`);
 
-            let deletedVersions = 0;
-
-            // ghcr.io requires a Bearer token obtained via the /token endpoint; Basic auth alone
-            // does not work for private packages, causing child manifests to go unprotected.
-            const ghToken = process.env.GITHUB_TOKEN || '';
-            const basicAuth = Buffer.from(`USERNAME:${ghToken}`).toString('base64');
+            const ghToken = process.env.GITHUB_TOKEN || "";
+            const basicAuth = Buffer.from(`USERNAME:${ghToken}`).toString("base64");
 
             async function getRegistryToken(scope) {
               const res = await fetch(
                 `https://ghcr.io/token?service=ghcr.io&scope=${encodeURIComponent(scope)}`,
-                { headers: { Authorization: `Basic ${basicAuth}` } }
+                { headers: { Authorization: `Basic ${basicAuth}` } },
               );
               if (!res.ok) return null;
               const body = await res.json();
               return body.token || null;
             }
 
+            let totalDeleted = 0;
+
             for (const pkg of packages) {
-              const versions = await paginate((page) =>
-                github.request("GET /orgs/{org}/packages/{package_type}/{package_name}/versions", {
-                  org,
-                  package_type: packageType,
-                  package_name: pkg.name,
-                  per_page: perPage,
-                  page,
-                })
+              const versions = await paginate(
+                (page) =>
+                  github.request(
+                    "GET /orgs/{org}/packages/{package_type}/{package_name}/versions",
+                    {
+                      org,
+                      package_type: packageType,
+                      package_name: pkg.name,
+                      per_page: perPage,
+                      page,
+                    },
+                  ),
+                perPage,
               );
 
-              // Collect digests that are protected: tagged versions + their manifest list children
-              const protectedDigests = new Set();
-              for (const v of versions) {
-                const tags = v.metadata?.container?.tags || [];
-                if (tags.length > 0) {
-                  // The version name is the digest (sha256:...)
-                  protectedDigests.add(v.name);
-                }
-              }
+              const registryToken = await getRegistryToken(
+                `repository:${org}/${pkg.name}:pull`,
+              );
 
-              // Fetch manifest lists from GHCR registry to find child digests of multi-arch tagged versions
-              const registryToken = await getRegistryToken(`repository:${org}/${pkg.name}:pull`);
-              if (!registryToken) {
-                core.warning(`Package ${pkg.name}: unable to obtain ghcr.io token – skipping manifest inspection, all untagged versions will be kept.`);
-              }
-
-              if (registryToken) {
-                for (const v of versions) {
-                  const tags = v.metadata?.container?.tags || [];
-                  if (tags.length === 0) continue;
-                  for (const tag of tags) {
-                    try {
-                      const res = await fetch(
-                        `https://ghcr.io/v2/${org}/${pkg.name}/manifests/${tag}`,
-                        {
-                          headers: {
-                            Authorization: `Bearer ${registryToken}`,
-                            Accept: [
-                              'application/vnd.oci.image.index.v1+json',
-                              'application/vnd.docker.distribution.manifest.list.v2+json',
-                              'application/vnd.docker.distribution.manifest.v2+json',
-                              'application/vnd.oci.image.manifest.v1+json',
-                            ].join(', '),
-                          },
-                        }
-                      );
-                      if (res.ok) {
-                        const manifest = await res.json();
-                        // Manifest list / OCI index references child manifests by digest
-                        if (manifest.manifests && Array.isArray(manifest.manifests)) {
-                          for (const m of manifest.manifests) {
-                            if (m.digest) {
-                              protectedDigests.add(m.digest);
-                            }
-                          }
-                        }
-                      } else {
-                        core.warning(`Package ${pkg.name}:${tag}: registry returned ${res.status} – child manifests NOT protected.`);
-                      }
-                    } catch (e) {
-                      core.warning(`Failed to fetch manifest for ${pkg.name}:${tag}: ${e.message}`);
-                    }
-                  }
-                }
-              }
-
-              core.info(`Package ${pkg.name}: ${protectedDigests.size} protected digest(s).`);
-
-              // If we could not inspect manifests, skip deletion entirely to avoid breaking images
-              if (!registryToken) {
-                core.info(`Package ${pkg.name}: skipping deletion (no registry token).`);
-                continue;
-              }
-
-              const untaggedVersions = versions.filter((version) => {
-                const tags = version.metadata?.container?.tags || [];
-                if (tags.length > 0) return false;
-                // Protect untagged versions referenced by tagged manifest lists
-                if (protectedDigests.has(version.name)) {
-                  core.info(`Package ${pkg.name}: keeping ${version.name} (referenced by tagged version).`);
-                  return false;
-                }
-                return true;
+              const { deletable, skipped } = await classifyVersions({
+                org,
+                pkgName: pkg.name,
+                versions,
+                registryToken,
+                log: core,
               });
 
-              if (untaggedVersions.length === 0) {
-                core.info(`Package ${pkg.name}: no untagged versions.`);
+              if (skipped) {
+                core.info(`Package ${pkg.name}: skipping deletion.`);
                 continue;
               }
 
-              core.info(`Package ${pkg.name}: deleting ${untaggedVersions.length} untagged version(s).`);
+              if (deletable.length === 0) {
+                core.info(`Package ${pkg.name}: no untagged versions to delete.`);
+                continue;
+              }
 
-              for (const version of untaggedVersions) {
+              core.info(
+                `Package ${pkg.name}: deleting ${deletable.length} untagged version(s).`,
+              );
+
+              for (const version of deletable) {
                 await github.request(
                   "DELETE /orgs/{org}/packages/{package_type}/{package_name}/versions/{package_version_id}",
                   {
@@ -175,12 +111,11 @@ jobs:
                     package_type: packageType,
                     package_name: pkg.name,
                     package_version_id: version.id,
-                  }
+                  },
                 );
-
-                deletedVersions += 1;
+                totalDeleted += 1;
                 core.info(`Deleted ${pkg.name}@${version.id}`);
               }
             }
 
-            core.info(`Cleanup finished. Deleted ${deletedVersions} untagged version(s).`);
+            core.info(`Cleanup finished. Deleted ${totalDeleted} untagged version(s).`);
