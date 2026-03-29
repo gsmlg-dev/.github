@@ -38,9 +38,9 @@ Building Docker images.
 | [react](https://github.com/gsmlg-dev/react) | HTML | ⭐️ 0 | 🍴 0 |
 | [lit](https://github.com/gsmlg-dev/lit) | HTML | ⭐️ 0 | 🍴 0 |
 | [visx](https://github.com/gsmlg-dev/visx) | HTML | ⭐️ 0 | 🍴 0 |
+| [yellow-dog](https://github.com/gsmlg-dev/yellow-dog) | Elixir | ⭐️ 0 | 🍴 0 |
 | [three-fiber](https://github.com/gsmlg-dev/three-fiber) | HTML | ⭐️ 0 | 🍴 0 |
 | [caddy-geoip-location](https://github.com/gsmlg-dev/caddy-geoip-location) | Go | ⭐️ 0 | 🍴 0 |
-| [helm-charts](https://github.com/gsmlg-dev/helm-charts) | Go Template | ⭐️ 0 | 🍴 0 |
 | [caddy-webshell](https://github.com/gsmlg-dev/caddy-webshell) | N/A | ⭐️ 0 | 🍴 0 |
 | [web-llm](https://github.com/gsmlg-dev/web-llm) | Python | ⭐️ 0 | 🍴 0 |
 | [mlc-llm](https://github.com/gsmlg-dev/mlc-llm) | Python | ⭐️ 0 | 🍴 0 |
@@ -55,13 +55,15 @@ Building Docker images.
 | [phoenix_socket_client](https://github.com/gsmlg-dev/phoenix_socket_client) | Elixir | ⭐️ 0 | 🍴 0 |
 | [browser-extension-gemini](https://github.com/gsmlg-dev/browser-extension-gemini) | JavaScript | ⭐️ 0 | 🍴 0 |
 | [browser-extension-react-typescript-starter](https://github.com/gsmlg-dev/browser-extension-react-typescript-starter) | TypeScript | ⭐️ 0 | 🍴 0 |
+| [gsmlg-app-backend](https://github.com/gsmlg-dev/gsmlg-app-backend) | Elixir | ⭐️ 0 | 🍴 0 |
 | [rust-chat](https://github.com/gsmlg-dev/rust-chat) | Rust | ⭐️ 0 | 🍴 0 |
 | [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 0 | 🍴 1 |
 | [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
-| [open-code-agents](https://github.com/gsmlg-dev/open-code-agents) | Shell | ⭐️ 0 | 🍴 0 |
+| [cloud-deploy](https://github.com/gsmlg-dev/cloud-deploy) | N/A | ⭐️ 0 | 🍴 0 |
 | [loki-mode](https://github.com/gsmlg-dev/loki-mode) | Python | ⭐️ 0 | 🍴 0 |
 | [denox](https://github.com/gsmlg-dev/denox) | Elixir | ⭐️ 0 | 🍴 0 |
 | [code-agent](https://github.com/gsmlg-dev/code-agent) | Shell | ⭐️ 0 | 🍴 0 |
 | [caddy-reverse-proxy-dump](https://github.com/gsmlg-dev/caddy-reverse-proxy-dump) | Go | ⭐️ 0 | 🍴 0 |
+| [relayixir](https://github.com/gsmlg-dev/relayixir) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
