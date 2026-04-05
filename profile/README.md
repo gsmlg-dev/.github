@@ -38,6 +38,7 @@ Building Docker images.
 | [react](https://github.com/gsmlg-dev/react) | HTML | ⭐️ 0 | 🍴 0 |
 | [lit](https://github.com/gsmlg-dev/lit) | HTML | ⭐️ 0 | 🍴 0 |
 | [visx](https://github.com/gsmlg-dev/visx) | HTML | ⭐️ 0 | 🍴 0 |
+| [gsmlg_umbrella](https://github.com/gsmlg-dev/gsmlg_umbrella) | Elixir | ⭐️ 0 | 🍴 0 |
 | [yellow-dog](https://github.com/gsmlg-dev/yellow-dog) | Elixir | ⭐️ 0 | 🍴 0 |
 | [three-fiber](https://github.com/gsmlg-dev/three-fiber) | HTML | ⭐️ 0 | 🍴 0 |
 | [caddy-geoip-location](https://github.com/gsmlg-dev/caddy-geoip-location) | Go | ⭐️ 0 | 🍴 0 |
@@ -59,7 +60,6 @@ Building Docker images.
 | [rust-chat](https://github.com/gsmlg-dev/rust-chat) | Rust | ⭐️ 0 | 🍴 0 |
 | [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 0 | 🍴 1 |
 | [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
-| [cloud-deploy](https://github.com/gsmlg-dev/cloud-deploy) | N/A | ⭐️ 0 | 🍴 0 |
 | [loki-mode](https://github.com/gsmlg-dev/loki-mode) | Python | ⭐️ 0 | 🍴 0 |
 | [denox](https://github.com/gsmlg-dev/denox) | Elixir | ⭐️ 0 | 🍴 0 |
 | [code-agent](https://github.com/gsmlg-dev/code-agent) | Shell | ⭐️ 0 | 🍴 0 |
