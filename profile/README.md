@@ -18,7 +18,7 @@ Building Docker images.
 <!--START_SECTION:repositories-->
 | Repository | Language | Stars | Forks |
 |---|---|---|---|
-| [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 57 | 🍴 4 |
+| [caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui) | HTML | ⭐️ 58 | 🍴 4 |
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 9 | 🍴 0 |
@@ -34,7 +34,6 @@ Building Docker images.
 | [http_fetch](https://github.com/gsmlg-dev/http_fetch) | Elixir | ⭐️ 1 | 🍴 0 |
 | [kubernetes-from-scratch](https://github.com/gsmlg-dev/kubernetes-from-scratch) | N/A | ⭐️ 0 | 🍴 0 |
 | [docker-xiaomi-aqara-rtsp](https://github.com/gsmlg-dev/docker-xiaomi-aqara-rtsp) | C | ⭐️ 0 | 🍴 0 |
-| [kauri.io-archive](https://github.com/gsmlg-dev/kauri.io-archive) | JavaScript | ⭐️ 0 | 🍴 0 |
 | [Sony-Digital-Paper-Hack](https://github.com/gsmlg-dev/Sony-Digital-Paper-Hack) | N/A | ⭐️ 0 | 🍴 0 |
 | [react](https://github.com/gsmlg-dev/react) | HTML | ⭐️ 0 | 🍴 0 |
 | [lit](https://github.com/gsmlg-dev/lit) | HTML | ⭐️ 0 | 🍴 0 |
@@ -65,5 +64,6 @@ Building Docker images.
 | [code-agent](https://github.com/gsmlg-dev/code-agent) | Shell | ⭐️ 0 | 🍴 0 |
 | [caddy-reverse-proxy-dump](https://github.com/gsmlg-dev/caddy-reverse-proxy-dump) | Go | ⭐️ 0 | 🍴 0 |
 | [relayixir](https://github.com/gsmlg-dev/relayixir) | Elixir | ⭐️ 0 | 🍴 0 |
+| [ex_pi](https://github.com/gsmlg-dev/ex_pi) | N/A | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
