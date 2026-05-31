@@ -22,7 +22,6 @@ Building Docker images.
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 9 | 🍴 0 |
-| [tplink-router-api-sdk](https://github.com/gsmlg-dev/tplink-router-api-sdk) | JavaScript | ⭐️ 4 | 🍴 1 |
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 2 | 🍴 0 |
 | [yellow-dog](https://github.com/gsmlg-dev/yellow-dog) | Elixir | ⭐️ 2 | 🍴 0 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
@@ -42,11 +41,7 @@ Building Docker images.
 | [gsmlg_umbrella](https://github.com/gsmlg-dev/gsmlg_umbrella) | Elixir | ⭐️ 0 | 🍴 0 |
 | [three-fiber](https://github.com/gsmlg-dev/three-fiber) | HTML | ⭐️ 0 | 🍴 0 |
 | [caddy-geoip-location](https://github.com/gsmlg-dev/caddy-geoip-location) | Go | ⭐️ 0 | 🍴 0 |
-| [caddy-webshell](https://github.com/gsmlg-dev/caddy-webshell) | N/A | ⭐️ 0 | 🍴 0 |
-| [web-llm](https://github.com/gsmlg-dev/web-llm) | Python | ⭐️ 0 | 🍴 0 |
-| [mlc-llm](https://github.com/gsmlg-dev/mlc-llm) | Python | ⭐️ 0 | 🍴 0 |
 | [mason-bricks](https://github.com/gsmlg-dev/mason-bricks) | Dart | ⭐️ 0 | 🍴 0 |
-| [send-tweet-v2-action](https://github.com/gsmlg-dev/send-tweet-v2-action) | Dart | ⭐️ 0 | 🍴 0 |
 | [ex_html_minifier](https://github.com/gsmlg-dev/ex_html_minifier) | Elixir | ⭐️ 0 | 🍴 0 |
 | [ex_solution](https://github.com/gsmlg-dev/ex_solution) | N/A | ⭐️ 0 | 🍴 0 |
 | [gsmlg_epmd](https://github.com/gsmlg-dev/gsmlg_epmd) | Erlang | ⭐️ 0 | 🍴 0 |
@@ -66,5 +61,6 @@ Building Docker images.
 | [caddy-reverse-proxy-dump](https://github.com/gsmlg-dev/caddy-reverse-proxy-dump) | Go | ⭐️ 0 | 🍴 0 |
 | [relayixir](https://github.com/gsmlg-dev/relayixir) | Elixir | ⭐️ 0 | 🍴 0 |
 | [pgEdge-spock](https://github.com/gsmlg-dev/pgEdge-spock) | N/A | ⭐️ 0 | 🍴 0 |
+| [ex_turso](https://github.com/gsmlg-dev/ex_turso) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
