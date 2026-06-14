@@ -57,7 +57,7 @@ Building Docker images.
 | [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
 | [loki-mode](https://github.com/gsmlg-dev/loki-mode) | Python | ⭐️ 0 | 🍴 0 |
 | [denox](https://github.com/gsmlg-dev/denox) | Elixir | ⭐️ 0 | 🍴 0 |
-| [code-agent](https://github.com/gsmlg-dev/code-agent) | Shell | ⭐️ 0 | 🍴 0 |
+| [code-agent](https://github.com/gsmlg-dev/code-agent) | JavaScript | ⭐️ 0 | 🍴 0 |
 | [caddy-reverse-proxy-dump](https://github.com/gsmlg-dev/caddy-reverse-proxy-dump) | Go | ⭐️ 0 | 🍴 0 |
 | [relayixir](https://github.com/gsmlg-dev/relayixir) | Elixir | ⭐️ 0 | 🍴 0 |
 | [pgEdge-spock](https://github.com/gsmlg-dev/pgEdge-spock) | N/A | ⭐️ 0 | 🍴 0 |
