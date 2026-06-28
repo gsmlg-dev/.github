@@ -31,7 +31,6 @@ Building Docker images.
 | [abyss](https://github.com/gsmlg-dev/abyss) | Elixir | ⭐️ 1 | 🍴 1 |
 | [ex_dns](https://github.com/gsmlg-dev/ex_dns) | Elixir | ⭐️ 1 | 🍴 0 |
 | [http_fetch](https://github.com/gsmlg-dev/http_fetch) | Elixir | ⭐️ 1 | 🍴 0 |
-| [ex_pi](https://github.com/gsmlg-dev/ex_pi) | Elixir | ⭐️ 1 | 🍴 0 |
 | [kubernetes-from-scratch](https://github.com/gsmlg-dev/kubernetes-from-scratch) | N/A | ⭐️ 0 | 🍴 0 |
 | [docker-xiaomi-aqara-rtsp](https://github.com/gsmlg-dev/docker-xiaomi-aqara-rtsp) | C | ⭐️ 0 | 🍴 0 |
 | [Sony-Digital-Paper-Hack](https://github.com/gsmlg-dev/Sony-Digital-Paper-Hack) | N/A | ⭐️ 0 | 🍴 0 |
