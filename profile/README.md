@@ -31,6 +31,7 @@ Building Docker images.
 | [abyss](https://github.com/gsmlg-dev/abyss) | Elixir | ⭐️ 1 | 🍴 1 |
 | [ex_dns](https://github.com/gsmlg-dev/ex_dns) | Elixir | ⭐️ 1 | 🍴 0 |
 | [http_fetch](https://github.com/gsmlg-dev/http_fetch) | Elixir | ⭐️ 1 | 🍴 0 |
+| [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 1 | 🍴 1 |
 | [kubernetes-from-scratch](https://github.com/gsmlg-dev/kubernetes-from-scratch) | N/A | ⭐️ 0 | 🍴 0 |
 | [docker-xiaomi-aqara-rtsp](https://github.com/gsmlg-dev/docker-xiaomi-aqara-rtsp) | C | ⭐️ 0 | 🍴 0 |
 | [Sony-Digital-Paper-Hack](https://github.com/gsmlg-dev/Sony-Digital-Paper-Hack) | N/A | ⭐️ 0 | 🍴 0 |
@@ -52,7 +53,6 @@ Building Docker images.
 | [browser-extension-react-typescript-starter](https://github.com/gsmlg-dev/browser-extension-react-typescript-starter) | TypeScript | ⭐️ 0 | 🍴 0 |
 | [gsmlg-app-backend](https://github.com/gsmlg-dev/gsmlg-app-backend) | Elixir | ⭐️ 0 | 🍴 0 |
 | [rust-chat](https://github.com/gsmlg-dev/rust-chat) | Rust | ⭐️ 0 | 🍴 0 |
-| [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 0 | 🍴 1 |
 | [secrethub](https://github.com/gsmlg-dev/secrethub) | Elixir | ⭐️ 0 | 🍴 0 |
 | [loki-mode](https://github.com/gsmlg-dev/loki-mode) | Shell | ⭐️ 0 | 🍴 0 |
 | [denox](https://github.com/gsmlg-dev/denox) | Elixir | ⭐️ 0 | 🍴 0 |
