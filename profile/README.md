@@ -61,5 +61,6 @@ Building Docker images.
 | [relayixir](https://github.com/gsmlg-dev/relayixir) | Elixir | ⭐️ 0 | 🍴 0 |
 | [pgEdge-spock](https://github.com/gsmlg-dev/pgEdge-spock) | N/A | ⭐️ 0 | 🍴 0 |
 | [ex_turso](https://github.com/gsmlg-dev/ex_turso) | Elixir | ⭐️ 0 | 🍴 0 |
+| [graviton_mq](https://github.com/gsmlg-dev/graviton_mq) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
