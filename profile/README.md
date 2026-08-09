@@ -22,7 +22,7 @@ Building Docker images.
 | [phoenix-react](https://github.com/gsmlg-dev/phoenix-react) | Elixir | ⭐️ 52 | 🍴 0 |
 | [Foundation](https://github.com/gsmlg-dev/Foundation) | Dockerfile | ⭐️ 40 | 🍴 4 |
 | [elixir_caddy](https://github.com/gsmlg-dev/elixir_caddy) | Elixir | ⭐️ 9 | 🍴 0 |
-| [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 2 | 🍴 0 |
+| [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 2 | 🍴 1 |
 | [yellow-dog](https://github.com/gsmlg-dev/yellow-dog) | Elixir | ⭐️ 2 | 🍴 0 |
 | [concord](https://github.com/gsmlg-dev/concord) | Elixir | ⭐️ 2 | 🍴 1 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
