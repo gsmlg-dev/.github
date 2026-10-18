@@ -64,5 +64,7 @@ Building Docker images.
 | [graviton_mq](https://github.com/gsmlg-dev/graviton_mq) | Elixir | ⭐️ 0 | 🍴 0 |
 | [ex_ssl](https://github.com/gsmlg-dev/ex_ssl) | Elixir | ⭐️ 0 | 🍴 0 |
 | [ex_quic](https://github.com/gsmlg-dev/ex_quic) | Elixir | ⭐️ 0 | 🍴 0 |
+| [styx](https://github.com/gsmlg-dev/styx) | Elixir | ⭐️ 0 | 🍴 0 |
+| [hell](https://github.com/gsmlg-dev/hell) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
