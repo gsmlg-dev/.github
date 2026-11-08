@@ -67,5 +67,6 @@ Building Docker images.
 | [gaoxy](https://github.com/gsmlg-dev/gaoxy) | Elixir | ⭐️ 0 | 🍴 0 |
 | [styx](https://github.com/gsmlg-dev/styx) | Elixir | ⭐️ 0 | 🍴 0 |
 | [hell](https://github.com/gsmlg-dev/hell) | Elixir | ⭐️ 0 | 🍴 0 |
+| [native_artifact](https://github.com/gsmlg-dev/native_artifact) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
