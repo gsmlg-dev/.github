@@ -26,6 +26,7 @@ Building Docker images.
 | [caddy-storage-s3](https://github.com/gsmlg-dev/caddy-storage-s3) | Go | ⭐️ 2 | 🍴 1 |
 | [yellow-dog](https://github.com/gsmlg-dev/yellow-dog) | Elixir | ⭐️ 2 | 🍴 0 |
 | [gsmlg-cli](https://github.com/gsmlg-dev/gsmlg-cli) | Go | ⭐️ 1 | 🍴 0 |
+| [gsmlg_umbrella](https://github.com/gsmlg-dev/gsmlg_umbrella) | Elixir | ⭐️ 1 | 🍴 1 |
 | [echarts-el](https://github.com/gsmlg-dev/echarts-el) | TypeScript | ⭐️ 1 | 🍴 0 |
 | [user_agent_generator](https://github.com/gsmlg-dev/user_agent_generator) | Elixir | ⭐️ 1 | 🍴 0 |
 | [phoenix_session_process](https://github.com/gsmlg-dev/phoenix_session_process) | Elixir | ⭐️ 1 | 🍴 1 |
@@ -39,7 +40,6 @@ Building Docker images.
 | [react](https://github.com/gsmlg-dev/react) | HTML | ⭐️ 0 | 🍴 0 |
 | [lit](https://github.com/gsmlg-dev/lit) | HTML | ⭐️ 0 | 🍴 0 |
 | [visx](https://github.com/gsmlg-dev/visx) | HTML | ⭐️ 0 | 🍴 0 |
-| [gsmlg_umbrella](https://github.com/gsmlg-dev/gsmlg_umbrella) | Elixir | ⭐️ 0 | 🍴 0 |
 | [three-fiber](https://github.com/gsmlg-dev/three-fiber) | HTML | ⭐️ 0 | 🍴 0 |
 | [caddy-geoip-location](https://github.com/gsmlg-dev/caddy-geoip-location) | Go | ⭐️ 0 | 🍴 0 |
 | [mason-bricks](https://github.com/gsmlg-dev/mason-bricks) | Dart | ⭐️ 0 | 🍴 0 |
@@ -68,5 +68,6 @@ Building Docker images.
 | [styx](https://github.com/gsmlg-dev/styx) | Elixir | ⭐️ 0 | 🍴 0 |
 | [hell](https://github.com/gsmlg-dev/hell) | Elixir | ⭐️ 0 | 🍴 0 |
 | [native_artifact](https://github.com/gsmlg-dev/native_artifact) | Elixir | ⭐️ 0 | 🍴 0 |
+| [formata](https://github.com/gsmlg-dev/formata) | Elixir | ⭐️ 0 | 🍴 0 |
 
 <!--END_SECTION:repositories-->
